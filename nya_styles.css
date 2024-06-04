@@ -1,0 +1,107 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Serif", serif;
+}
+
+i{
+
+    font-size: small;
+    color: black
+}
+header {
+
+    background-color: cadetblue;
+    text-align: center;
+    padding-top: 18px;
+    padding-top: 1px;
+}
+
+h1 {
+
+    font-size: 30px;
+    font-size: large;
+}
+
+li {
+
+
+    padding-inline: 100px;
+    display: inline;
+    font-size: 15px;
+    outline-color: black;
+    margin: auto;
+    
+}
+a{
+    color:#fff;
+    text-decoration:none;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 18px;
+    padding-top: 1px;
+}
+
+article{
+
+    text-align: center;
+    margin: 10px;
+    width:25%;
+    border-style: solid;
+    border-color: #222;
+    border-width: 3px;
+    border-radius: 10px;
+}
+    
+article img{
+    
+    width:200px;
+    margin: 0 20%;
+}
+
+button{
+
+    background-color: transparent;
+    border-style:outset;
+    border-color: grey;
+    
+}
+
+@media(max-width: 600px){
+    header{
+        background-color: slateblue;
+    }
+}
+
+@media(min-width: 500px){
+    header{
+        background-color: cadetblue;
+    }
+}
+
+nav{
+    display: block;
+}
+
+ul{
+    display: flex;
+}
+
+img{
+   margin: 0 auto 
+}
+
+.card:hover{
+    background-color: purple;
+    transition: all is ease-in-out;
+    transform: scale(1);
+    color: darkred;
+}
+
+article:hover{
+    transform: scale(1.05);
+    transition: all 1s ease ;
+}
