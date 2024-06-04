@@ -14,8 +14,8 @@ header {
 
     background-color: cadetblue;
     text-align: center;
-    padding-top: 18px;
-    padding-top: 1px;
+    padding-top: 10px;
+    padding-top: 12px;
 }
 
 h1 {
@@ -24,12 +24,8 @@ h1 {
     font-size: large;
 }
 
-li {
-
-
-    padding-inline: 100px;
-    display: inline;
-    font-size: 15px;
+li{
+    font-size: 20px;
     outline-color: black;
     margin: auto;
     
@@ -45,11 +41,18 @@ h1 {
     padding-top: 1px;
 }
 
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100dvh;
+}
+
 article{
 
     text-align: center;
     margin: 10px;
-    width:25%;
+    width: 80%;
     border-style: solid;
     border-color: #222;
     border-width: 3px;
@@ -58,8 +61,8 @@ article{
     
 article img{
     
-    width:200px;
-    margin: 0 20%;
+    width: 250px;
+    margin: 0 auto;
 }
 
 button{
@@ -70,10 +73,18 @@ button{
     
 }
 
-@media(max-width: 600px){
+@media(min-width: 600px){
     header{
         background-color: slateblue;
     }
+    .contenedor{
+        flex-direction: row;
+    }
+    article{
+        width: 35%;
+        height: auto;
+    }
+    
 }
 
 @media(min-width: 500px){
